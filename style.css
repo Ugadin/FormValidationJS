@@ -1,0 +1,112 @@
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family:sans-serif;
+}
+.container{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px gray;
+    width: 500px;
+    max-width: 100%;
+}
+
+.header{
+    background-color: #f7f7f7;
+    border-bottom: 1px solid lightgray;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.header > h2{
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.form{
+    padding: 1rem 2rem;
+
+}
+
+
+.form-control{
+    margin-bottom: 1rem;
+    padding-bottom:20px;
+    border: none;
+}
+
+.form-control > label{
+    display:inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control > input{
+    border: 2px solid lightgray;
+    border-radius:4px;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+    height: 3rem;
+}
+.form-control.success > input{
+    border-color: rgb(73, 181, 87);
+}
+.form-control.error > input{
+    border-color: rgb(225, 88, 88);
+}
+
+.form-control > i{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 405px;
+    visibility: hidden;
+}
+.form-control.success i.fa-check-circle{
+    visibility: visible;
+    color: rgb(73, 181, 87);
+}
+.form-control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: rgb(225, 88, 88);
+}
+
+.form-control > small {
+    visibility: hidden;
+    position: absolute;
+}
+.form-control.error small{
+    color:rgb(225, 88, 88) ;
+    visibility: visible;
+}
+
+.form button {
+    background-color: rgb(77, 179, 145);
+    border: 1px solid rgb(60, 148, 118);
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+}
+.form button:hover {
+    background-color: rgb(54, 126, 102);
+    border: 1px solid rgb(39, 96, 77);
+}
